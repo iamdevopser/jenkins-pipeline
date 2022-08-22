@@ -1,10 +1,11 @@
 pipeline {
-    agent { label 'none'}
+    agent { 
     stages {
         stage('build') {
             steps {
                 echo 'This is buld step'
                 sh 'echo Integrating Jenkins Pipeline with Github Webhook using Jenkinsfile'
+                }
             }
         }
     }
